@@ -1,0 +1,344 @@
+{
+    "sites":[
+        { 
+            "site" : "",
+            "access" : "private",
+            "role" : ["1","2","3","4","5","6","7","8"]
+        },
+        {
+            "site" : "index.php",
+            "access" : "private",
+            "role" : ["1","2","3","4","5","6","7","8"] 
+        },
+        {
+            "site" : "site%2Findex",
+            "access" : "private",
+            "role" : ["1","2","3","4","5","6","7","8"] 
+        },
+        {
+            "site" : "site%2Flogin",
+            "access" : "public",
+            "role" : ["1","2","3","4","5","6","7","8"] 
+        },
+        {
+            "site" : "site%2Flogout",
+            "access" : "private",
+            "role" : ["1","2","3","4","5","6","7","8"] 
+        },
+        {
+            "site" : "usuario",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "usuario%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "usuario%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "usuario%2Fview&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "usuario%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "usuario%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "cargo%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "cargo%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "cargo%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "cargo%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "cargo%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "departamento%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "departamento%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "departamento%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "departamento%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "departamento%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "arearesponsable%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "arearesponsable%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "arearesponsable%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "arearesponsable%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "arearesponsable%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatususuario%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatususuario%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatususuario%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatususuario%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatususuario%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "tiporequerimiento%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "tiporequerimiento%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "tiporequerimiento%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "tiporequerimiento%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "tiporequerimiento%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimiento%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimiento%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimiento%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimiento%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimiento%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+
+        {
+            "site" : "estatusrequerimientorequerimiento%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimientorequerimiento%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimientorequerimiento%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimientorequerimiento%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "estatusrequerimientorequerimiento%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+
+        {
+            "site" : "frecuencia%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "frecuencia%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "frecuencia%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "frecuencia%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "frecuencia%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "requerimiento%2Findex",
+            "access" : "private",
+            "role" : ["8","1"] 
+        },
+        {
+            "site" : "requerimiento%2Fcreate",
+            "access" : "private",
+            "role" : ["8","1"] 
+        },
+        {
+            "site" : "requerimiento%2Fview",
+            "access" : "private",
+            "role" : ["8","1"] 
+        },
+        {
+            "site" : "requerimiento%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "requerimiento%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuario%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuario%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuario%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuario%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuario%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuariousuario%2Findex",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuariousuario%2Fcreate",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuariousuario%2Fview",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuariousuario%2Fupdate&id",
+            "access" : "private",
+            "role" : ["8",""] 
+        },
+        {
+            "site" : "perfilusuariousuario%2Fdelete",
+            "access" : "private",
+            "role" : ["8",""] 
+        }
+
+    ],
+    "default-sites" : [
+        {
+            "public" : "site%2Flogin",
+            "private" : ""
+        }
+
+    ]
+}
