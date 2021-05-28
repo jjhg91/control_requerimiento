@@ -42,7 +42,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'fecha_estatus_requerimiento',
             
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => ('{view}')
+                
+            ],
         ],
     ]); ?>
 

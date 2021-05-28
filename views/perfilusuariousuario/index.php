@@ -31,7 +31,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'id_perfil_usuario',
             'estatus_perfil:boolean',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => ('{view}')
+                
+            ],
         ],
     ]); ?>
 

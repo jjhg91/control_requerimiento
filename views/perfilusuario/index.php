@@ -29,7 +29,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'id_perfil_usuario',
             'descripcion',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => ('{view}')
+                
+            ],
         ],
     ]); ?>
 

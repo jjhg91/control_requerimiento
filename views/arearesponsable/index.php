@@ -29,7 +29,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'id_area_responsable',
             'descripcion',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'template' => ('{view}')
+                
+            ],
         ],
     ]); ?>
 
