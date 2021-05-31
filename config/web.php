@@ -7,6 +7,7 @@ $config = [
     'id' => 'basic',
     'name' => '<img src="logo.png" style="height:32px; margin-bottom:52px;" />',
     'basePath' => dirname(__DIR__),
+    'language' => 'es',
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
