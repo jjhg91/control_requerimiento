@@ -152,6 +152,6 @@ button.btn.btn-link.logout:hover{
     background: #c13535 !important;
 } */
 
-a >span.glyphicon{
+tbody > tr > td > a > *{
     font-size: 1.3em;  
 }
