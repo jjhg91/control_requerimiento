@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\TipoRequerimiento */
 
-$this->title = $model->id_tipo_requerimiento;
+$this->title = 'Nro. Tipo de Requerimiento: '.$model->id_tipo_requerimiento;
 $this->params['breadcrumbs'][] = ['label' => 'Tipo Requerimientos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);

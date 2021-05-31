@@ -28,8 +28,9 @@ class Cargo extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['descripcion'], 'required'],
+            [['descripcion','habilitado'], 'required'],
             [['descripcion'], 'string'],
+            [['habilitado'], 'string'],
         ];
     }
 
@@ -41,6 +42,7 @@ class Cargo extends \yii\db\ActiveRecord
         return [
             'id_cargo' => 'Id Cargo',
             'descripcion' => 'Descripcion',
+            'habilitado' => 'Habilitado',
         ];
     }
 

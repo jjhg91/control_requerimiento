@@ -9,16 +9,16 @@ use app\models\EstatusRequerimiento;
 /* @var $searchModel app\models\EstatusRequerimientoRequerimientoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Estatus Requerimiento Requerimientos';
+$this->title = 'Auditoría de Requerimientos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="estatus-requerimiento-requerimiento-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Estatus Requerimiento Requerimiento', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    <!-- <p>
+        <?#= Html::a('Create Estatus Requerimiento Requerimiento', ['create'], ['class' => 'btn btn-success']) ?>
+    </p> -->
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         // 'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            // ['class' => 'yii\grid\SerialColumn'],
 
             'id_estatus_requerimeinto__requerimiento',
             'id_requerimiento',

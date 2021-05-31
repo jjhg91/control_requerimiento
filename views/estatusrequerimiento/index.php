@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\EstatusRequerimientoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Estatus Requerimientos';
+$this->title = 'Estatus de Requerimientos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="estatus-requerimiento-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Crear Estatus Requerimiento', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Crear Estatus de Requerimiento', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         // 'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            // ['class' => 'yii\grid\SerialColumn'],
 
             'id_estatus_requerimiento',
             'descripcion',

@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Departamento */
 
-$this->title = $model->id_departamento;
+$this->title = 'Nro. Departamento: '.$model->id_departamento;
 $this->params['breadcrumbs'][] = ['label' => 'Departamentos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id_departamento',
             'descripcion',
+            'habilitado:boolean',
         ],
     ]) ?>
 

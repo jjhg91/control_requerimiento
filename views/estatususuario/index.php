@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\EstatusUsuarioSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Estatus Usuarios';
+$this->title = 'Estatus de Usuarios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="estatus-usuario-index">
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         // 'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            // ['class' => 'yii\grid\SerialColumn'],
 
             'id_estatus_usuario',
             'descripcion',

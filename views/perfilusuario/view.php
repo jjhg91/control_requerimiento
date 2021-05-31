@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\PerfilUsuario */
 
-$this->title = $model->id_perfil_usuario;
+$this->title = 'Nro. Perfil de Usuario: '.$model->id_perfil_usuario;
 $this->params['breadcrumbs'][] = ['label' => 'Perfil Usuarios', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);

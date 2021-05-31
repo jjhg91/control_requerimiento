@@ -11,7 +11,7 @@ use app\models\EstatusRequerimiento;
 /* @var $this yii\web\View */
 /* @var $model app\models\Requerimiento */
 
-$this->title = 'REQUERIMIENTO N° - '.$model->id_requerimiento;
+$this->title = 'Nro. Requerimiento: '.$model->id_requerimiento;
 $this->params['breadcrumbs'][] = ['label' => 'Requerimientos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Actualizar', ['update', 'id' => $model->id_requerimiento], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Actualizar Estatus', ['estatus', 'id' => $model->id_requerimiento], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Cambiar Estatus', ['estatus', 'id' => $model->id_requerimiento], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Asignar Requerimiento', ['asignar', 'id' => $model->id_requerimiento], ['class' => 'btn btn-primary']) ?>
         
         <!-- <?#= Html::a('Eliminar', ['delete', 'id' => $model->id_requerimiento], [
@@ -46,25 +46,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id_requerimiento',
             'fecha_solicitud',
+            'id_tipo_requerimiento',
             [
-                'label' => 'ESTATUS',
-                'value' => function ($model)
-                    {
-                        $estatusR = EstatusRequerimientoRequerimiento::find()->where(['id_requerimiento' => $model->id_requerimiento])->orderBy(['id_estatus_requerimeinto__requerimiento' => SORT_DESC])->all();
-                        $estatusReq = $estatusR[0]->id_estatus_requerimiento;
-                        $estatus = EstatusRequerimiento::find()->where(['id_estatus_requerimiento' => $estatusReq])->one();
-                        // var_dump($estatusR);
-                        // exit;
-                        return $estatus->descripcion;
-                    }
-            ],
-            'objetivo',
-            'descripcion',
-            'datos',
-            'fecha_requerida',
-            // 'fecha_registro',
-            [
-                'label' => 'SOLICITANTE',
+                'label' => 'USUARIO SOLICITANTE',
                 'value' => function($model){
                     $solicitante = Usuario::findOne($model->p00_solicitante);
                     $respuesta = 'P00-'.$model->p00_solicitante.' | '.$solicitante->nombres.' '.$solicitante->apellidos;
@@ -72,9 +56,29 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $respuesta;
                 }
             ],
+            [
+                'label' => 'ESTATUS',
+                'value' => function ($model)
+                    {
+                        $estatusR = EstatusRequerimientoRequerimiento::find()->where(['id_requerimiento' => $model->id_requerimiento])->orderBy(['id_estatus_requerimeinto__requerimiento' => SORT_DESC])->all();
+                        $estatusReq = $estatusR[0]->id_estatus_requerimiento;
+                        $fechaReq = $estatusR[0]->fecha_estatus_requerimiento;
+
+                        $estatus = EstatusRequerimiento::find()->where(['id_estatus_requerimiento' => $estatusReq])->one();
+                        
+                        $resp = $estatus->descripcion ." | ".$fechaReq;
+                        return $resp;
+                    }
+            ],
+            'objetivo',
+            'descripcion',
+            'datos',
+            'fecha_requerida',
+            // 'fecha_registro',
+            
             
             'id_frecuencia',
-            'id_tipo_requerimiento',
+            
         ],
     ]) ?>
 </div>

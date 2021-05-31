@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\EstatusUsuario */
 
-$this->title = $model->id_estatus_usuario;
+$this->title = 'Nro. Estatus de Usuario: '.$model->id_estatus_usuario;
 $this->params['breadcrumbs'][] = ['label' => 'Estatus Usuarios', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);

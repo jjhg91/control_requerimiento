@@ -56,7 +56,7 @@ class Requerimiento extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id_requerimiento' => 'REQUERIMIENTO NRO.',
+            'id_requerimiento' => 'NRO. REQUERIMIENTO',
             'fecha_solicitud' => 'FECHA DE SOLICITUD',
             'objetivo' => 'OBJETIVO DE REQUERIMIENTO',
             'descripcion' => 'DESCRIPCION DEL REQUERIMIENTO',

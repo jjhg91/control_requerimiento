@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\AreaResponsableSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Area Responsables';
+$this->title = 'Areas Responsables';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="area-responsable-index">
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         // 'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            // ['class' => 'yii\grid\SerialColumn'],
 
             'id_area_responsable',
             'descripcion',

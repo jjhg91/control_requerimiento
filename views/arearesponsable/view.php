@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\AreaResponsable */
 
-$this->title = $model->id_area_responsable;
+$this->title = 'Nro. Area Responsable: '.$model->id_area_responsable;
 $this->params['breadcrumbs'][] = ['label' => 'Area Responsables', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);

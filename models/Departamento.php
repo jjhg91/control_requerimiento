@@ -29,8 +29,9 @@ class Departamento extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['descripcion'], 'required'],
+            [['descripcion','habilitado'], 'required'],
             [['descripcion'], 'string'],
+            [['habilitado'], 'boolean'],
         ];
     }
 
@@ -42,6 +43,7 @@ class Departamento extends \yii\db\ActiveRecord
         return [
             'id_departamento' => 'Id Departamento',
             'descripcion' => 'Descripcion',
+            'habilitado' => 'Habilitado',
         ];
     }
 
