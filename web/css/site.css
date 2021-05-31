@@ -151,3 +151,7 @@ a.navbar-brand{
 button.btn.btn-link.logout:hover{
     background: #c13535 !important;
 } */
+
+a >span.glyphicon{
+    font-size: 1.3em;  
+}
